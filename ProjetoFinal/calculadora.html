@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+   
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <div  class="container">
+        <div class="cabecalho">
+            <h1>Calculadora de horas trabalhadas</h1>
+         </div>
+         <main class="wrapper">
+            <div class="formulario">
+                <p>
+                    Qual seu nome? <input type="text" name="nome" id="nome" title="Digite seu nome" class="questionario required">
+                    Quanto você recebeu de salário mensal? <input type="number" name="salario" id="salario" class="questionario" title="Digite seu salário mensal"required>
+                    Quantos dias você trabalha na semana? <input type="number" name="dias" id="dias" class="questionario" size="2" maxlength="2" title="Digite quantos dias você trabalha na semana" required>
+                    Quantas horas você trabalha por dia? <input type="number" name="horas" id="horas" class="questionario" size="3" maxlength="3" title="Digite quantas horas você trabalha por dia" required>
+                    Qual o valor do lanche? <input type="text" name="lanche" id="lanche" class="questionario" title="Digite o valor do lanche"   required>
+                </p>
+                <p>
+                    <input type="button" value="Calcular" class="button" onclick="calcular()">
+                </p>
+            </div>
+           
+            <div class="imagem">
+                <img src="imagem/Learning.jpg" alt="imagem de uma pessoa lendo">
+            </div>
+            
+        </main>
+             
+        <div class="resultado invisivel" id="resultado">
+            <p class="subtitulo" >Resultado</p>
+            <p class="texto" > Oi <span id="nomes" > </span> , você recebe R$<span id="horatrabalhada"> </span> por hora trabalhada</p>
+            <p class="texto">Para você seu lanche de <span id="custodolanche" > </span>, você precisa trabalhar <span id="horasparalanche" >12</span>h</p>
+          </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        $('#lanche').mask("#.##0,00", {reverse: true});
+       
+ </script>
+
+    
+    
+</body>
+</html>

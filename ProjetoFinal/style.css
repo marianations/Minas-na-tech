@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 1068px;
+    max-height: 665px;
+    background: #F5F5F5;
+    padding: 24px;
+    box-shadow: 10px 10px 10px;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    width: 50%;
+}
+.questionario {
+    display: block;
+    width: 340px;
+    height: 44px ;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: solid 1px #B0BEC5 ;
+    outline: none;
+}
+
+.button {
+    background: ;
+    border-radius: 4px;
+    border-style: none;
+    box-shadow: 0 4px 6px #407BFF ;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 14px;
+    width: 340px;
+}
+
+button:hover {
+    background: #2066fd  ;
+    transition: 0.5s;
+
+}
+
+.resultado {
+    margin-top: 32px;
+    text-align: center;
+    
+}
+
+.invisivel {
+    display: none;
+}
+
+.subtitulo {
+    margin-bottom: 12px ;
+    font-weight: bold;
+}
+
+.texto {
+    margin-bottom: 12px;
+}
+
+#nome, #horas, #valor {
+    font-weight: bold;
+
+}
