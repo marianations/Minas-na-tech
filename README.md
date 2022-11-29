@@ -1,3 +1,3 @@
 # Minas-na-tech
 
-Projeto final da Minas na Tech! 
+Projeto final para a iniciativa Minas na Tech! 
